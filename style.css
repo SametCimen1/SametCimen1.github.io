@@ -455,6 +455,7 @@ navbar-links
     transition: all 0.5s;
     color: white;
 }
+
 .navBarActivate a{
     color: white;
 }
@@ -480,4 +481,21 @@ navbar-links
 .container a{
     text-decoration: none;
     color: black;
+}
+
+.navBarActivate .logoLink{
+    margin:0 2rem;
+   
+}
+.navBarActivate .navbar-links a{
+    margin:0 2rem;
+}
+@media (max-width:830px) {
+    .navBarActivate .logoLink{
+        margin:0 1rem;
+       
+    }
+    .navBarActivate .navbar-links a{
+        margin:0 0;
+    }
 }
