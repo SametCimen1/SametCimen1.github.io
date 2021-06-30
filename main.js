@@ -1,50 +1,57 @@
-var days = document.querySelector(".dayText");
-var hours = document.querySelector(".hourText");
-var minutes = document.querySelector(".MinuteText");
-var seconds = document.querySelector(".secondText");
 
+var links = document.querySelectorAll(".socialMedia");
+var heyText = document.querySelector(".hey");
+var logoText = document.querySelector(".logo");
+var myNavBar = document.querySelector(".navBar");
+var card2 = document.querySelector(".card2");
 
-
-var release = new Date(2021, 5,27);
-var today = new Date();
-var milSeconds = Math.abs((release.getTime()-today.getTime()))
-let  diffSeconds =Math.floor(milSeconds/1000);
-let  diffMinutes =Math.floor(diffSeconds/60);
-let  diffHours =Math.floor(diffSeconds/3600);
-let  diffDays =Math.floor(diffHours/24);
-const upDateTime = () =>{
-  today = new Date();
-  milSeconds = Math.abs((release.getTime()-today.getTime()))
-  diffSeconds =Math.floor(milSeconds/1000);
-  diffMinutes =Math.floor(diffSeconds/60);
-  diffHours =Math.floor(diffSeconds/3600);
-  diffDays =Math.floor(diffHours/24);
- days.textContent = diffDays;
- hours.textContent = diffHours%24;
- minutes.textContent = diffMinutes%60;
- seconds.textContent = diffSeconds%60;
-}
-function update(){
-  
-  setInterval(upDateTime,1000);
+card2.onclick = ()=>{
+  window.location.href = "https://sametcimen1.github.io/games/";
 }
 
-update();
+heyText.addEventListener("mouseover", ()=>{
+  heyText.classList.add("mouseHoverInText")
+  heyText.classList.remove("mouseHoverOutText")
+})
+heyText.addEventListener("mouseout", ()=>{
+  heyText.classList.remove("mouseHoverInText")
+  heyText.classList.add("mouseHoverOutText")
+})
 
-function createBubble(){
 
-  const area = document.querySelector(".bouble");
-    const createElem = document.createElement('span');
-    createElem.style.width = "1px";
-    createElem.style.height = "1px";
-    
-    createElem.style.left = Math.random() * (window.innerWidth-20) +"px";
-   
-    area.appendChild(createElem);
-    console.log()
-    setTimeout(()=>{
-      createElem.remove();
-    }, 10000)
+logoText.addEventListener("mouseover", ()=>{
+  logoText.classList.add("mouseHoverInLogo")
+  logoText.classList.remove("mouseHoverOutLogo")
+})
+logoText.addEventListener("mouseout", ()=>{
+  logoText.classList.remove("mouseHoverInLogo")
+  logoText.classList.add("mouseHoverOutLogo")
+})
+
+for(let i = 0; i<links.length; i++){
+  links[i].addEventListener("mouseout", ()=>{
+    links[i].classList.remove("mouseHoverIn")
+    links[i].classList.add("mouseHoverOut")
+  })
+  links[i].addEventListener("mouseover", ()=>{
+    links[i].classList.remove("mouseHoverOut")
+    links[i].classList.add("mouseHoverIn")
+  })
   }
    
-setInterval(createBubble,200)
+   
+const isItInList = elem =>{
+  for(let i = 0; i <elem.length; i++){
+    if(elem[i] === "hovored"){}
+  }
+}
+ 
+window.onscroll = function(){
+  var top = window.scrollY;
+  if(top >= 100){
+    myNavBar.classList.add("navBarActivate")
+  }
+  else{
+    myNavBar.classList.remove("navBarActivate")
+  }
+}
