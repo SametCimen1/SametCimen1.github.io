@@ -512,10 +512,23 @@ navbar-links
     }
   
 }
-.moveDown{
-    transform: translateY(100px);
-}
+
+
 .animate{
-    transform: translateY(-100px);
-    transition: 2s;
+    /* transform: translateY(-100px);
+    transition: 2s; */
+    animation: moveUp 2s forwards
+}
+
+@keyframes moveUp {
+    0%{
+        
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+    
 }
