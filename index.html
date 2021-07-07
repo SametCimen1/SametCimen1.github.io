@@ -9,6 +9,7 @@
     <script src = "toggle.js" async></script>
     <script src = "main.js" async></script>
     <script src = "rotate.js" async></script>
+    <script src = "animate.js" async></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -120,24 +121,24 @@
 
     <section class = "myInformations" id ="containerAboutMe">
       <div class = "textAndImgContainer">
-        <div class = "aboutMe ">
+        <div class = "aboutMe animate moveDown">
               <h1>About Me</h1>
         </div>
         <div class = "aboutMeContainer"> <!-- set width, container = flex. spacebetween -->
-          <img src="img/myImage1.jpg" alt="" class = "myImage">
-          <p class = "myText">Hello, my name is Samet Cimen. I like web development and have a great fashion for machine learning. </p>
+          <img src="img/myImage1.jpg" alt="" class = "myImage animate moveDown">
+          <p class = "myText animate">Hello, my name is Samet Cimen. I like web development and have a great fashion for machine learning. </p>
         </div>
     </div>
     </section>
    
     <section class = "projects" id = "containerProjects">
-        <div class = "projectsInfo">
+        <div class = "projectsInfo animate moveDown">
              <h1>Projects</h1>
         </div>
         <div class = "container">
 
            <div class = "card card1">
-             <div class = "cardImgAndInfo">
+             <div class = "cardImgAndInfo animate moveDown">
                  <div class = "imgContainer">
                    <img src="img/project1.png" alt="" class = "projectImage">
                  </div>
@@ -167,7 +168,7 @@
            
            <div class = "card card2">
            
-                <div class = "cardImgAndInfo">
+                <div class = "cardImgAndInfo animate moveDown">
                     <div class = "imgContainer">
                 
                       <img src="img/GameOver.jpg" alt="Game Over image" class = "projectImage fix">
@@ -193,7 +194,38 @@
                   <h2>Languages: JS</h2>
                 </div>
          
-          </div>    
+          </div>  
+          
+          <div class = "card card2">
+           
+            <div class = "cardImgAndInfo animate moveDown" >
+                <div class = "imgContainer">
+            
+                  <img src="img/movie.png" alt="movie  image" class = "projectImage movie fix">
+                </div>
+                <h2>Movie-App</h2>
+                <h4>Movie App using The Movie DB API</h4>
+            </div>
+            <div class = "cardGithub"> <!-- Margin auto and width 90%.justify:space between  --> <!-- Border 1px, background:transparent. -->
+                <a href="https://github.com/SametCimen1/movie-api-with-react" class = "cardLinks">
+                <div class = "githubHolder">
+                  <img src="img/githubSVG.svg" alt="" class = "carGitHubLogo"> <!-- github img -->
+                  <p class = "clone">Clone Project</p>
+                </div>
+                </a>
+                <a href="https://github.com/SametCimen1/movie-api-with-react">
+                <div class = "githubHolder">  
+                  <img src="img/githubSVG.svg" alt="" class = "carGitHubLogo"> <!-- github img -->
+                  <p class = "clone">Repository</p>
+                </div>
+                </a>
+            </div>
+            <div class = "language">
+              <h2>Languages: JS, React</h2>
+            </div>
+     
+      </div>  
+
           
           
           

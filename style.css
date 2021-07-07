@@ -361,12 +361,15 @@ margin-right:10%;
 }
 .projectImage{
 width: 10vw;
-height: 30%;
+height: 20%;
 min-width: 100px;
 min-height: 50px;
 border-radius: 90%;
+}
 
-
+.movie{
+    max-height: 100px;
+    max-width: 100px;
 }
 
 .cardImgAndInfo h2{
@@ -508,4 +511,11 @@ navbar-links
         margin: 0 1rem;
     }
   
+}
+.moveDown{
+    transform: translateY(100px);
+}
+.animate{
+    transform: translateY(-100px);
+    transition: 2s;
 }
