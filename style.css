@@ -517,7 +517,7 @@ navbar-links
 .animate{
     /* transform: translateY(-100px);
     transition: 2s; */
-    animation: moveUp 2s forwards
+    /* animation: moveUp 2s forwards */
 }
 
 @keyframes moveUp {
