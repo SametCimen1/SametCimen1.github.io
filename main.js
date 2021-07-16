@@ -55,3 +55,5 @@ window.onscroll = function(){
     myNavBar.classList.remove("navBarActivate")
   }
 }
+
+document.querySelector('.madeWith').textContent = "</> by Samet Cimen"

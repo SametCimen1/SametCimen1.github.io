@@ -531,3 +531,60 @@ navbar-links
     }
     
 }
+
+
+.getInTouch{
+    width: 100%;
+    background-color: #E9ECEF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+
+}
+.getInTouchInner{
+    text-align: center;
+    width: 100%;
+    
+}
+
+.getInTouchInner h1, .getInTouchInner p{
+    margin: 2rem 0;
+}
+.getInTouchInner h1{
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.getInTouchInner a {
+    text-decoration: none;
+}
+.getInTouchInner a:hover{
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.692);
+}
+.getInTouchInner p{
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width:600px){
+    .getInTouchInner{
+
+        width: 60%;
+    }
+    .getInTouch{
+        padding:4rem 0 ;
+    
+    }
+    
+.getInTouchInner h1{
+    font-size: 3rem;
+}
+.getInTouchInner p{
+    font-size: 1.5rem;
+}
+
+
+}
