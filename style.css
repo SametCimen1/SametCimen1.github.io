@@ -593,8 +593,10 @@ navbar-links
 
 }
 .slide{
-   margin: 5rem 1rem;
-   padding:1rem;
+    width: 100%;
+   
+   margin: 5rem 0;
+   padding:0 1rem ;
    max-height: 1000px;
    /* background-color: aqua; */
 }
@@ -722,4 +724,38 @@ navbar-links
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.techContainer{
+    margin-top: 3rem;
+}
+.techText{
+    font-family: 'Hind Siliguri', sans-serif;
+    width: 100%;
+    display: flex;
+    padding:20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: rgba(30, 30, 30, 0.822);
+}
+.frontback{
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+ 
+    
+}
+.frontImage,.backImage{
+    width: 100px;
+}
+
+.frontEnd,.backEnd{
+ 
+ /* offset-x | offset-y | blur-radius | color */ 
+box-shadow: 2px 2px 10px rgb(221, 221, 221), -2px -2px 10px rgb(221, 221, 221) ;
+padding:10px 10px;
+
 }
