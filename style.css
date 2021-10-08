@@ -771,3 +771,8 @@ padding:10px 10px;
     font-weight: 200;
     font-size: 1.5rem;
 }
+.findworkbuddy{
+    max-width: none;
+    width: 170px;
+    height: 70px;
+}
