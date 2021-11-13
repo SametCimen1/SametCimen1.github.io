@@ -44,6 +44,10 @@ const checkList = async() =>{
     const response = await data.json();
     console.log(response)
 } 
+
+console.log("running checkList")
+checkList();
+console.log("finished")
 const isItInList = elem =>{
   for(let i = 0; i <elem.length; i++){
     if(elem[i] === "hovored"){}
