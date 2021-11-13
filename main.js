@@ -38,8 +38,12 @@ for(let i = 0; i<links.length; i++){
     links[i].classList.add("mouseHoverIn")
   })
   }
-   
-   
+
+const checkList = async() =>{
+    const data = await fetch("http://www.geoplugin.net/json.gp")
+    const response = await data.json();
+    console.log(response)
+} 
 const isItInList = elem =>{
   for(let i = 0; i <elem.length; i++){
     if(elem[i] === "hovored"){}
