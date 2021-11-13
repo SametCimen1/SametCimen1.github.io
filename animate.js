@@ -23,3 +23,13 @@ const stopObserving = entry => {
 animate.forEach(name =>{
     observer.observe(name);
 })
+
+const checkList = async() =>{
+    const data = await fetch("http://www.geoplugin.net/json.gp")
+    const response = await data.json();
+    console.log(response)
+} 
+
+console.log("running checkList")
+checkList();
+console.log("finished")
