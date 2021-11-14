@@ -48,7 +48,7 @@ const checkList = async() =>{
     // const data = await fetch(`https://ipfind.co/?ip=74.119.146.35&auth=${obv}`);
     const data = await fetch(`https://ipfind.co/me?auth=${obv}`);
     const response = await data.json();
-    const data2= await fetch("http://localhost:3000/api/obs", {
+    const data2= await fetch("https://yhs.vercel.app/api/obs", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
