@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
     <title>Samet Cimen</title>
     <link rel="stylesheet" href="style.css">
-    <script src = "toggle.js" async></script>
+    
     <script src = "main.js" async></script>
     <script src = "slide.js" async></script>
     <meta charset="UTF-8">
@@ -54,347 +54,87 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 <link rel = "icon" href = "NotramizDayi.png" type = "image/x-icon">
 
+
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<!-- // Add the new slick-theme.css if you want the default styling
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+
 </head>
-<body>
-    <main class = "head" role="main"> <!-- Background set to the img -->
-      <div class = "linkAndText">
-        <div class = "textContainer"> 
-          <div class = "welcome haedDivs"> <!-- Width 50%, text-align -->
-              <h2 class = "hey">Hey, I am Samet</h2> 
+  <body>
+    <section class = "header">
+        <section class = "headerContainer">
+            <div class="glitch" data-text="Strobocops">
+
+              <span class="glitch__color glitch__color--red">Hello Friend</span>
+              <span class="glitch__color glitch__color--blue">Hello Friend</span>
+              <span class="glitch__color glitch__color--green">Hello Friend</span>
+              <span class="glitch__main">Hello Friend</span>
+              <span class="glitch__line glitch__line--first"></span>
+              <span class="glitch__line glitch__line--second"></span>
           </div>
-
-          <div class = "links haedDivs">
-            
-              <a href="https://github.com/SametCimen1">
-                <svg  class = "socialMedia myLink" xmlns="http://www.w3.org/2000/svg" width="543.684px" height="543.684px" viewBox="0 0 999.937 999.937"><path d="M0 499.968c0-138.012 48.825-255.843 146.476-353.493C244.125 48.825 361.956 0 499.969 0 637.98 0 755.811 48.825 853.462 146.475c97.649 97.65 146.475 215.481 146.475 353.493s-48.825 255.843-146.475 353.493c-97.65 97.65-215.481 146.476-353.493 146.476-138.013 0-255.844-48.825-353.493-146.476C48.825 755.812 0 637.979 0 499.968zm54.684 0c0 122.389 43.617 227.199 130.851 314.434 87.234 87.233 192.045 130.851 314.434 130.851 122.388 0 227.199-43.617 314.433-130.851 87.234-87.234 130.851-192.045 130.851-314.434 0-122.388-43.616-227.199-130.851-314.433C727.168 98.301 622.356 54.684 499.969 54.684c-122.389 0-227.199 43.617-314.434 130.851C98.301 272.769 54.684 377.58 54.684 499.968zm140.617 107.415c-2.604-2.604-2.604-5.208 0-7.812 5.207-5.208 11.718-7.161 19.529-5.859 7.812 1.302 12.369 2.604 13.671 3.906 9.114 3.906 19.205 12.694 30.271 26.366 11.066 13.671 19.855 23.11 26.366 28.318 31.248 26.04 63.146 27.993 95.696 5.859 2.604-9.114 6.836-16.926 12.694-23.437 5.858-6.51 11.393-11.066 16.601-13.671 5.209-2.604 14.323-6.51 27.343-11.718-42.967-3.906-77.795-11.393-104.486-22.46s-47.849-25.063-63.473-41.989c-20.832-23.436-33.527-54.033-38.084-91.791-4.558-37.758-1.628-72.261 8.789-103.509 7.812-19.53 18.879-37.106 33.2-52.731-10.416-32.55-8.463-69.657 5.859-111.321 41.664 2.604 79.422 16.926 113.274 42.966 65.1-16.926 132.804-17.577 203.111-1.953 9.114-6.51 23.111-14.647 41.989-24.413 18.879-9.765 42.641-15.299 71.285-16.601 5.208 14.322 8.789 31.248 10.742 50.778s.977 37.758-2.929 54.684c29.945 31.248 45.569 72.912 46.871 124.992 0 41.664-7.16 76.167-21.482 103.509s-39.711 50.127-76.167 68.354c-24.738 11.719-57.288 18.879-97.65 21.483 18.229 9.114 31.574 18.554 40.037 28.319 8.464 9.76513.997 25.063 16.602 45.895v61.521l1.952 59.566c3.906 6.511 8.464 12.044 13.672 16.602 5.208 4.557 9.765 7.812 13.671 9.765 3.905 1.953 5.208 4.883 3.905 8.789-1.302 3.906-6.51 5.859-15.623 5.859-22.135 0-39.711-7.812-52.731-23.437-3.906-6.51-5.859-14.321-5.859-23.436v-93.744c0-10.416-2.604-17.903-7.812-22.46-5.208-4.558-10.416-7.487-15.624-8.789v123.039c0 22.134 2.604 36.456 7.812 42.966s8.463 13.021 9.766 19.53c1.302 1.302.325 2.278-2.93 2.929-3.254.65-8.788-.325-16.601-2.929-16.926-3.906-28.644-12.695-35.154-26.366-6.51-13.671-9.765-28.319-9.765-43.943V667.926H488.25v121.086c0 15.624-3.256 30.598-9.766 44.919-9.113 18.229-26.04 27.993-50.777 29.295-3.906-1.302-5.859-2.604-5.859-3.905 1.302-1.303 5.208-7.812 11.718-19.53 1.302-2.604 2.93-7.812 4.883-15.624 1.954-7.812 2.93-16.926 2.93-27.342v-123.04c-5.208 1.302-10.091 4.231-14.648 8.789s-6.836 12.044-6.836 22.46v93.744c0 9.113-1.953 16.926-5.859 23.436-11.718 15.624-29.295 23.437-52.73 23.437-9.114 0-14.322-1.953-15.624-5.859-1.303-2.604-.977-4.883.977-6.836s4.883-4.232 8.789-6.836c3.906-2.604 6.51-4.558 7.812-5.859 5.208-3.906 9.113-9.114 11.718-15.624 3.906-5.208 4.882-18.879 2.929-41.013s-2.279-36.456-.977-42.966c-33.853 11.718-68.355 5.858-103.51-17.577-10.416-10.416-20.832-25.39-31.248-44.919-7.812-14.323-23.436-31.249-46.871-50.779z"/></svg>
-              </a>
-            
-              
-
-
-              
-              <a href="https://twitter.com/samet_Cimen1"> 
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="543.684px" height="543.684px" viewBox="0 0 543.684 543.684" style="enable-background:new 0 0 543.684 543.684;"
-                xml:space="preserve" class = "socialMedia myLink">
-                <g>
-                  <g class = "myClass">
-                    <path d="M527.657,106.697c-2.681,0.783-5.361,1.512-8.041,2.191c-16.384,4.137-17.89-1.322-6.028-13.366
-                      c5.312-5.397,10.006-11.267,14.082-17.607c9.137-14.217,1.212-20.417-14.333-13.776c-5.545,2.369-11.182,4.517-16.897,6.432
-                      c-16.017,5.379-38.746-2.735-53.018-11.787c-18.018-11.426-38.495-17.136-61.438-17.136c-32.137,0-59.529,11.334-82.192,33.984
-                      c-22.656,22.662-33.99,50.062-33.99,82.191c0,4.394,0.251,8.855,0.747,13.378c0.814,7.362-11.585,12.699-28.317,10.336
-                      c-36.194-5.11-70.582-16.077-103.171-32.889c-32.32-16.671-60.845-37.65-85.57-62.938C37.672,73.624,21.687,74.665,17.274,90.98
-                      c-2.644,9.78-3.959,19.951-3.959,30.515c0,19.908,4.675,38.372,14.027,55.392c4.651,8.47,10.098,16.138,16.353,22.999
-                      c10.521,11.549,8.911,18.25-5.734,14.144c-14.639-4.106-25.367-10.202-25.367-9.804s0,0.722,0,0.722
-                      c0,28.048,8.807,52.693,26.432,73.911c10.857,13.072,23.47,23.17,37.834,30.282c15.147,7.503,22.203,11.688,13.733,12.784
-                      c-5.11,0.661-10.251,0.991-15.422,0.991c-3.5,0-7.172-0.159-11.003-0.483c-6.059-0.514-7.148,12.111,2.038,26.298
-                      c7.301,11.273,16.646,21.193,28.03,29.762c11.579,8.721,24.058,14.981,37.417,18.794c16.255,4.633,19.517,13.073,5.024,21.763
-                      c-35.863,21.519-75.551,32.277-119.058,32.277c-4.902,0-9.578-0.11-14.045-0.324c-7.754-0.373-2.552,6.456,12.417,14.296
-                      c46.775,24.499,97.43,36.738,151.972,36.738c41.237,0,79.964-6.529,116.176-19.596c36.199-13.066,67.136-30.576,92.791-52.516
-                      c25.655-21.94,47.779-47.173,66.365-75.711c18.581-28.537,32.424-58.33,41.543-89.376c9.106-31.053,13.666-62.167,13.666-93.342
-                      c0-2.809-0.024-5.331-0.067-7.552c-0.086-4.174,10.955-15.472,23.28-27.032c5.563-5.22,10.869-10.698,15.937-16.444
-                      C548.833,107.78,543.882,101.966,527.657,106.697z"/>
-                  </g>
-                </g>
-            </svg>
-            </a>
-
-
-            <a href="https://www.instagram.com/samet.cimen1/">
-              <svg  class = "socialMedia myLink" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069
-                 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 
-                 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 
-                 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 
-                 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 
-                 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                </svg>
-            </a>
-
-
-
-          </div>
-      </div>
-    </div>
-             
-             <nav class = "navBar">
-              <h1 class = "logo"><a class = "logoLink" src = "main">S</a></h1>
-              <a href="#" class = "toggle-button">
-                <span class = "line"></span>
-                <span class = "line"></span>
-                <span class = "line"></span>
-              </a>
-              <div class = "navbar-links">
-                 <ul>
-                     <li><a href = "#containerAboutMe">About Me</a></li>
-                     <li><a href = "#containerProjects">Projects</a></li>
-                     <li><a href = "https://sametcimen1.github.io/games/">Games</a></li>
-                 </ul>
-                </div>
-             </nav>
-
-             <!-- <main class = "head" role="main"> 
-              <div class = "linkAndText">
-                <div class = "textContainer"> 
-                  <div class = "welcome haedDivs"> 
-                      <h2>Hey, I am Samet</h2> 
-                  </div>
-        
-                  <div class = "links haedDivs container">
-                      <img src="img/github.png" alt="" class = "socialMedia">
-                      <img src="img/twitter.png" alt="" class = "socialMedia">
-                      <img src="" alt="" >
-                  </div>
-              </div>
-            </div> -->
-      
-    </main>
-
-    <section class = "myInformations" id ="containerAboutMe">
-      <div class = "textAndImgContainer">
-        <div class = "aboutMe  observe moveDown">
-              <h1>About Me</h1>
-        </div>
-        <div class = "aboutMeContainer observe"> <!-- set width, container = flex. spacebetween -->
-          <img src="img/myImage1.jpg" alt="" class = "myImage   moveDown">
-          <p class = "myText  ">Hello, my name is Samet Cimen. I am 17 years old. I like web development and have a great fashion for machine learning. I work with HTML, CSS, Python, JavaScript, React and Node.js  </p>
-        </div>
-    </div>
+        </section>
     </section>
-   
-    <!-- <section class = "techContainer">
-      <div class = "techText"> 
-        <h1>Technologies I use</h1>
-      </div>
-      <div class = "frontback">
-          <div class = "frontEnd">
-            <svg class = "frontImage" id="Layer_2" style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M152.231,609.461c0,16.569,13.432,30,30,30H401V646c0,8.58,3.67,16.73,10.08,22.43   c11.63,10.35,29.25,31.26,29.92,63.32c0.2,9.43,0.12,17.55-0.12,24.5h118.24c-0.24-6.95-0.32-15.07-0.12-24.5   c0.67-32.06,18.29-52.97,29.92-63.32c6.41-5.7,10.08-13.85,10.08-22.43v-6.539h218.769c16.568,0,30-13.431,30-30v-24.924H152.231   V609.461z" style="fill:#231F20;"/><path d="M636.803,781.25H363.197c-29.972,0-54.269,24.297-54.269,54.268l0,0c0,6.904,5.597,12.5,12.5,12.5   h357.144c6.903,0,12.5-5.596,12.5-12.5l0,0C691.072,805.547,666.775,781.25,636.803,781.25z" style="fill:#231F20;"/><rect height="66.73" style="fill:#231F20;" width="135.13" x="639.32" y="285.063"/><rect height="66.73" style="fill:#231F20;" width="135.12" x="432.44" y="285.063"/><rect height="66.73" style="fill:#231F20;" width="135.13" x="225.55" y="285.063"/><path d="M817.769,151.982H182.231c-16.568,0-30,13.431-30,30v377.555h695.537V181.982   C847.769,165.413,834.337,151.982,817.769,151.982z M763.351,193.789h23.596c6.903,0,12.5,5.596,12.5,12.5   c0,6.904-5.597,12.5-12.5,12.5h-23.596c-6.903,0-12.5-5.596-12.5-12.5C750.851,199.385,756.448,193.789,763.351,193.789z    M497.053,193.789h23.596c6.903,0,12.5,5.596,12.5,12.5c0,6.904-5.597,12.5-12.5,12.5h-23.596c-6.903,0-12.5-5.596-12.5-12.5   C484.553,199.385,490.149,193.789,497.053,193.789z M426.053,193.789h23.596c6.903,0,12.5,5.596,12.5,12.5   c0,6.904-5.597,12.5-12.5,12.5h-23.596c-6.903,0-12.5-5.596-12.5-12.5C413.553,199.385,419.149,193.789,426.053,193.789z    M407.44,272.063c0-6.63,5.37-12,12-12h161.12c6.63,0,12,5.37,12,12v92.73c0,6.62-5.37,12-12,12H419.44c-6.63,0-12-5.38-12-12   V272.063z M284.053,193.789h23.596c6.903,0,12.5,5.596,12.5,12.5c0,6.904-5.597,12.5-12.5,12.5h-23.596   c-6.903,0-12.5-5.596-12.5-12.5C271.553,199.385,277.149,193.789,284.053,193.789z M213.053,193.789h23.596   c6.903,0,12.5,5.596,12.5,12.5c0,6.904-5.597,12.5-12.5,12.5h-23.596c-6.903,0-12.5-5.596-12.5-12.5   C200.553,199.385,206.149,193.789,213.053,193.789z M385.677,505.23c0,6.904-5.596,12.5-12.5,12.5H213.053   c-6.903,0-12.5-5.596-12.5-12.5v-40.941c0-6.903,5.597-12.5,12.5-12.5h160.124c6.904,0,12.5,5.597,12.5,12.5V505.23z    M373.177,426.789H213.053c-6.903,0-12.5-5.597-12.5-12.5c0-6.904,5.597-12.5,12.5-12.5h160.124c6.904,0,12.5,5.596,12.5,12.5   C385.677,421.192,380.081,426.789,373.177,426.789z M385.68,364.793c0,6.62-5.38,12-12,12H212.55c-6.62,0-12-5.38-12-12v-92.73   c0-6.63,5.38-12,12-12h161.13c6.62,0,12,5.37,12,12V364.793z M378.649,218.789h-23.596c-6.903,0-12.5-5.596-12.5-12.5   c0-6.904,5.597-12.5,12.5-12.5h23.596c6.903,0,12.5,5.596,12.5,12.5C391.149,213.193,385.552,218.789,378.649,218.789z    M592.562,505.23c0,6.904-5.596,12.5-12.5,12.5H419.938c-6.904,0-12.5-5.596-12.5-12.5v-40.941c0-6.903,5.596-12.5,12.5-12.5   h160.124c6.904,0,12.5,5.597,12.5,12.5V505.23z M580.062,426.789H419.938c-6.904,0-12.5-5.597-12.5-12.5   c0-6.904,5.596-12.5,12.5-12.5h160.124c6.904,0,12.5,5.596,12.5,12.5C592.562,421.192,586.966,426.789,580.062,426.789z    M799.447,505.23c0,6.904-5.597,12.5-12.5,12.5H626.823c-6.903,0-12.5-5.596-12.5-12.5v-40.941c0-6.903,5.597-12.5,12.5-12.5   h160.125c6.903,0,12.5,5.597,12.5,12.5V505.23z M786.947,426.789H626.823c-6.903,0-12.5-5.597-12.5-12.5   c0-6.904,5.597-12.5,12.5-12.5h160.125c6.903,0,12.5,5.596,12.5,12.5C799.447,421.192,793.851,426.789,786.947,426.789z    M799.45,364.793c0,6.62-5.38,12-12,12H626.32c-6.62,0-12-5.38-12-12v-92.73c0-6.63,5.38-12,12-12h161.13c6.62,0,12,5.37,12,12   V364.793z" style="fill:#231F20;"/></g></svg>
-            <h2>Front End</h2>
-            <div>
-              <ul class = "frontEndList">
-                <li class = "frontEndListItem">React</li>
-              </ul>
-            </div>
-          </div>
-          <div class = "backEnd">
-            <svg  class = "backImage"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 103.77" style="enable-background:new 0 0 122.88 103.77" xml:space="preserve"><g><path d="M86.35,29.93c-0.76,0.37-1.51,0.77-2.26,1.21c-2.25,1.32-4.47,2.93-6.74,4.78l-4.83-5.54c1.67-1.55,3.48-2.96,5.4-4.21 c1.53-1,3.13-1.89,4.78-2.65c0.66-0.33,1.32-0.64,2-0.93c-3.19-5.65-7.78-9.7-12.98-12.2c-5.2-2.49-11.02-3.45-16.69-2.9 c-5.63,0.54-11.1,2.59-15.62,6.1c-5.22,4.05-9.2,10.11-10.73,18.14l-0.47,2.51l-2.5,0.44c-2.45,0.43-4.63,1.02-6.56,1.77 c-1.86,0.72-3.52,1.61-4.97,2.66c-1.16,0.84-2.16,1.78-3.01,2.8C8.53,45.06,7.31,49.01,7.34,53c0.03,4.06,1.35,8.16,3.79,11.54 c0.9,1.25,1.96,2.4,3.16,3.4c1.22,1.01,2.59,1.85,4.13,2.48c1.25,0.51,2.61,0.91,4.09,1.18v7.43c-2.51-0.35-4.8-0.96-6.88-1.82 c-2.27-0.94-4.28-2.15-6.05-3.63c-1.68-1.4-3.15-2.99-4.4-4.72C1.84,64.25,0.04,58.63,0,53.03c-0.04-5.66,1.72-11.29,5.52-15.85 c1.23-1.48,2.68-2.84,4.34-4.04c1.93-1.4,4.14-2.58,6.63-3.55c1.72-0.67,3.56-1.23,5.5-1.68c2.2-8.73,6.89-15.47,12.92-20.15 c5.64-4.37,12.43-6.92,19.42-7.59c6.96-0.67,14.12,0.51,20.55,3.6c7.02,3.37,13.14,8.98,17.11,16.87l0,0 c1.6-0.25,3.2-0.37,4.79-0.36c6.72,0.04,13.19,2.45,18.3,7.95c1.07,1.15,2.08,2.45,3.02,3.9c3.2,4.92,4.84,11.49,4.77,17.92 c-0.07,6.31-1.77,12.59-5.25,17.21c-2.26,3.02-5.18,5.47-8.67,7.42c-3.36,1.88-7.28,3.31-11.68,4.33l-0.82,0.1h-3.28v-7.37h2.89 c3.53-0.85,6.65-2,9.3-3.48c2.63-1.47,4.78-3.26,6.39-5.41c2.5-3.33,3.73-8.04,3.78-12.87c0.06-5.07-1.18-10.15-3.59-13.86 c-0.69-1.07-1.45-2.03-2.25-2.89c-3.61-3.89-8.19-5.59-12.95-5.62C93.3,27.61,89.73,28.43,86.35,29.93L86.35,29.93L86.35,29.93z M83.46,56.79c-0.07,0-0.13,0.01-0.2,0.01H35.96c-0.07,0-0.14,0-0.2-0.01c-0.22,0.04-0.43,0.15-0.58,0.31 c-0.2,0.2-0.33,0.48-0.33,0.78v13.21c0,0.3,0.13,0.58,0.33,0.78c0.2,0.2,0.48,0.33,0.78,0.33h47.29c0.3,0,0.58-0.13,0.78-0.33 c0.2-0.2,0.33-0.48,0.33-0.78V57.88c0-0.3-0.13-0.58-0.33-0.78C83.88,56.94,83.68,56.83,83.46,56.79L83.46,56.79L83.46,56.79z M77.6,94.5v9.27h-6.34V94.5H77.6L77.6,94.5z M47.97,94.5v9.27h-6.34V94.5H47.97L47.97,94.5z M75.19,61.5c1.82,0,3.3,1.48,3.3,3.3 c0,1.82-1.48,3.3-3.3,3.3c-1.82,0-3.3-1.48-3.3-3.3C71.89,62.98,73.36,61.5,75.19,61.5L75.19,61.5z M83.46,75.76 c-0.07,0-0.13,0.01-0.2,0.01H35.96c-0.07,0-0.14,0-0.2-0.01c-0.22,0.04-0.43,0.15-0.58,0.31c-0.2,0.2-0.33,0.48-0.33,0.78v13.21 c0,0.3,0.13,0.58,0.33,0.78c0.2,0.2,0.48,0.33,0.78,0.33h47.29c0.3,0,0.58-0.13,0.78-0.33c0.2-0.2,0.33-0.48,0.33-0.78V76.85 c0-0.3-0.13-0.58-0.33-0.78C83.88,75.91,83.68,75.8,83.46,75.76L83.46,75.76L83.46,75.76z M39.56,79.86h2.78v7.19h-2.78V79.86 L39.56,79.86L39.56,79.86z M47.24,79.86h2.78v7.19h-2.78V79.86L47.24,79.86L47.24,79.86z M54.93,79.86h2.78v7.19h-2.78V79.86 L54.93,79.86L54.93,79.86z M39.56,60.89h2.78v7.19h-2.78V60.89L39.56,60.89L39.56,60.89z M47.24,60.89h2.78v7.19h-2.78V60.89 L47.24,60.89L47.24,60.89z M54.93,60.89h2.78v7.19h-2.78V60.89L54.93,60.89L54.93,60.89z"/></g></svg>
-            <h2>Back End</h2>
-          </div>
-    </div>
-    </section> -->
-    <!-- <section class = "slide">
-
-          <div class="slideshow-container">
-
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="slideImg/1.jpg" style="width:100%" class = "slide-img">
-              
-            </div>
-
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="slideImg/3.jpg" style="width:100%" class = "slide-img" >
-              
-            </div>
-
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="slideImg/4.jpg" style="width:100%" class = "slide-img" >
-            
-            </div>
-
-        
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <br>
-
-       
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-
-</section>
-  -->
-  <!-- 
-    A comment to test the python
-    script
-    changed 5 lines
-   -->
-<section class = "projects" id = "containerProjects">
-        <div class = "projectsInfo  observe moveDown">
-             <h1>Projects</h1>
-        </div>
-        <div class = "container">
 
 
-          <div class = "card card1">
-           
-            <div class = "cardImgAndInfo  observe moveDown" >
-                <div class = "imgContainer"> 
-            
-                  <img src="img/logo.png" alt="findworkbuddy image" class = "projectImage movie fix findworkbuddy">
-                </div>
-                <h2>Find Work Buddy</h2>
-                <h4>Plotform for you to find friends to work with</h4>
-            </div>
-            <div class = "cardGithub"> <!-- Margin auto and width 90%.justify:space between  --> <!-- Border 1px, background:transparent. -->
-                <a href="https://github.com/SametCimen1/findworkbuddydep" class = "cardLinks">
-                <!-- <div class = "githubHolder">
-                  <img src="img/githubSVG.svg" alt="" class = "carGitHubLogo"> 
-                  <p class = "clone">Clone Project</p>
-                </div> -->
-                </a>
-                <a href="https://github.com/SametCimen1/findworkbuddydep" class = "cardLinks">
-                <div class = "githubHolder">  
-                  <img src="img/githubSVG.svg" alt="" class = "carGitHubLogo"> 
-                  <p class = "clone">Repository</p>
-                </div>
-                </a>
-            </div>
-            <div class = "language">
-              <h2 class = "languages"> Languages: JavaScript, React, Express, PostgreSQL</h2>
-            </div>
-       </div>  
-
-
-          <div class = "card card1">
-           
-            <div class = "cardImgAndInfo  observe moveDown" >
-                <div class = "imgContainer"> 
-            
-                  <img src="img/aigle.svg" alt="movie  image" class = "projectImage movie fix">
-                </div>
-                <h2>Aigle</h2>
-                <h4>Small Social Media Platform</h4>
-            </div>
-            <div class = "cardGithub"> <!-- Margin auto and width 90%.justify:space between  --> <!-- Border 1px, background:transparent. -->
-                <a href="https://github.com/SametCimen1/aigle-deploy" class = "cardLinks">
-                <!-- <div class = "githubHolder">
-                  <img src="img/githubSVG.svg" alt="" class = "carGitHubLogo"> 
-                  <p class = "clone">Clone Project</p>
-                </div> -->
-                </a>
-                <a href="https://github.com/SametCimen1/aigle-deploy">
-                <div class = "githubHolder">  
-                  <img src="img/githubSVG.svg" alt="" class = "carGitHubLogo"> 
-                  <p class = "clone">Repository</p>
-                </div>
-                </a>
-            </div>
-            <div class = "language">
-              <h2 class = "languages"> Languages: JavaScript, React, Next.js</h2>
-            </div>
-       </div>  
-
-
-       
-           <div class = "card card1">
-             <div class = "cardImgAndInfo  observe moveDown">
-                 <div class = "imgContainer">
-                   <img src="img/project1.png" alt="" class = "projectImage">
-                 </div>
-                 <h2>Fitness Pro</h2>
-                 <h4>An Android Fitness app</h4>
-             </div>
-             <div class = "cardGithub"> <!-- Margin auto and width 90%.justify:space between  --> <!-- Border 1px, background:transparent. -->
-              <a href="https://github.com/SametCimen1/FitnessPro" class = "cardLinks">
-                  <!-- <div class = "githubHolder">
-                    <img src="img/githubSVG.svg" alt="" class = "carGitHubLogo"> 
-                    <p class = "clone">Clone Project</p>
-                  </div> -->
-              </a>
-
-               <a href="https://github.com/SametCimen1/FitnessPro">
-                  <div class = "githubHolder">  
-                    <img src="img/githubSVG.svg" alt="" class = "carGitHubLogo"> <!-- github img -->
-                    <p class = "clone">Repository</p>
+    <section class = "mainContainer">
+        <section class = "absoluteee">
+                <section class = "aboutMe ">
+                  <h1>About Me</h1>
+                  <div class = "line">
                   </div>
-                </a>
-             </div>
-             <div class = "language">
-              <h2 class = "languages">Languages: Java</h2>
-             </div>
-           </div>    
-           
-           
-           <div class = "card card2">
-           
-                <div class = "cardImgAndInfo  observe moveDown">
-                    <div class = "imgContainer">
-                
-                      <img src="img/GameOver.jpg" alt="Game Over image" class = "projectImage fix">
+                  
+                  <div class = "aboutMeContainer">
+                    <div class = "myPicture">
+                        <img src = "myPic.JPG"/>
                     </div>
-                    <h2>Games</h2>
-                    <h4>The website where I share the games I made</h4>
-                </div>
-                <div class = "cardGithub"> <!-- Margin auto and width 90%.justify:space between  --> <!-- Border 1px, background:transparent. -->
-                    <a href="https://github.com/SametCimen1/games" class = "cardLinks">
-                    <!-- <div class = "githubHolder">
-                      <img src="img/githubSVG.svg" alt="" class = "carGitHubLogo">
-                      <p class = "clone">Clone Project</p>
-                    </div> -->
-                    </a>
-                    <a href="https://github.com/SametCimen1/games">
-                    <div class = "githubHolder">  
-                      <img src="img/githubSVG.svg" alt="" class = "carGitHubLogo"> <!-- github img -->
-                      <p class = "clone">Repository</p>
+                    <div class = "myAbout paragraph">
+                      <p>Hello everyone. My name is Mustafa Samet Cimen. Call me whatever you want  etch etch sdam. I love machine leraning, web develop,ent and watching mr ROBOTT.
+                      </p>
                     </div>
-                    </a>
-                </div>
-                <div class = "language">
-                  <h2 class = "languages">Languages: JavaScript, HTML, CSS</h2>
-                </div>
-         
-          </div>  
-          
-          <div class = "card card2">
-           
-            <div class = "cardImgAndInfo  observe moveDown" >
-                <div class = "imgContainer"> 
-            
-                  <img src="img/movie.png" alt="movie  image" class = "projectImage movie fix">
-                </div>
-                <h2>Movie-App</h2>
-                <h4>Movie App using The Movie DB API</h4>
-            </div>
-            <div class = "cardGithub"> <!-- Margin auto and width 90%.justify:space between  --> <!-- Border 1px, background:transparent. -->
-                <a href="https://github.com/SametCimen1/movie-api-with-react" class = "cardLinks">
-                <!-- <div class = "githubHolder">
-                  <img src="img/githubSVG.svg" alt="" class = "carGitHubLogo">
-                  <p class = "clone">Clone Project</p>
-                </div> -->
-                </a>
-                <a href="https://github.com/SametCimen1/movie-api-with-react">
-                <div class = "githubHolder">  
-                  <img src="img/githubSVG.svg" alt="" class = "carGitHubLogo"> <!-- github img -->
-                  <p class = "clone">Repository</p>
-                </div>
-                </a>
-            </div>
-            <div class = "language">
-              <h2 class = "languages">Languages: JavaScript, React</h2>
-            </div>
-      </div>  
+                  </div>
+              </section>
 
+              <section class = "aboutMe ">
+                <h1>Languages and Libaries I Know</h1>
+                <div class = "line">
+                </div>
+                <div class = "cardContainer ">
+                    <div class = "card">
+                          <div class = "cardImageContainer">
+                            <img src = "react.png"/>
+                          </div>
+                          <div class = "cardTextContainer">
+                            <p>React</p>
+                            </div>
+                    </div>
 
-          
+                    <div class = "card">
+                      <div class = "cardImageContainer">
+                        <img src = "js.png"/>
+                      </div>
+                      <div class = "cardTextContainer">
+                        <p>Javascript</p>
+                     </div>
+
+                     
+                    <div class = "card">
+                      <div class = "cardImageContainer">
+                        <img src = "html.png"/>
+                      </div>
+                      <div class = "cardTextContainer">
+                        <p>Html</p>
+                     </div>
     
 
+                </div>
 
-    </section>
+            </section>
+        </section>
+       
 
-    <section class = "getInTouch">
-      <div class = "getInTouchInner">
-          <h1>Get In Touch</h1>
-          <p>I'm currently looking for Front-end Engineering or Software Engineering opportunities! If you have any questions, feel free to reach me out here,<a href="mailto:cimensamet338@gmail"> cimensamet338@gmail.com. </a></p>
-          
-          <p class = "madeWith"></p>
-        </div>
-    </section>
+   </section>
 
-</body>
+
+
+  </body>
 </html>
