@@ -262,7 +262,7 @@ body {
 
 .mainContainer {
   width: 100%;
-  min-height: 200vh;
+  min-height: 250vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.91)), to(black)), url("bg.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.91), black), url("bg.jpg");
   background-position: center;
@@ -327,13 +327,15 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .card {
-  min-width: 40%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-top: 1rem;
+  width: 400px;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,5 +354,33 @@ body {
   color: white;
   font-family: ticker;
   font-size: 1.5rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.projectContainer {
+  width: 80%;
+  margin-top: 2rem;
+  margin: auto;
+}
+
+.projectCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectCard img {
+  width: 100px;
+}
+
+.projectCard .paragraph {
+  margin-left: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

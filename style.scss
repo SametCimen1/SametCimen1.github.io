@@ -178,7 +178,7 @@ body{
 }
 .mainContainer{
     width: 100%;
-    min-height: 200vh;
+    min-height: 250vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 1)), url("bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -226,13 +226,16 @@ body{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
+
    
    
 }
 
 .card{
-    min-width: 40%;
-    justify-content: center;
+    margin-top: 1rem;
+    width: 400px;
+    height: 100px;
     display: flex;
     align-items: center;
     
@@ -248,3 +251,22 @@ body{
     font-family: $font;
     font-size: $paragraphSize;
 } 
+.mt-2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.projectContainer{
+    width: 80%;
+    margin-top: 2rem;
+    margin: auto;
+}
+.projectCard{
+    display: flex;
+    align-items: center;
+    img{
+        width: 100px;
+    }
+    .paragraph{
+        margin-left: 2rem;
+    }
+}
