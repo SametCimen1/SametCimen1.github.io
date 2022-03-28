@@ -25,6 +25,8 @@ body{
     background-size: cover;
 
 }
+
+
 .headerContainer{
     color:white;
     position:absolute;
@@ -33,6 +35,22 @@ body{
     margin-right: 20px;
 }
 
+@media screen and (max-width:1100px) {
+    .header{
+
+        background-image: none;
+      
+    
+    }
+    .headerContainer{
+        color:white;
+        position:absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom:50%;
+    }
+    
+}
 
 .glitch {
     animation: glitch-skew 4s cubic-bezier(.25, .46, .45, .94) 4s infinite;
@@ -257,16 +275,115 @@ body{
 }
 .projectContainer{
     width: 80%;
+    padding:10px;
     margin-top: 2rem;
     margin: auto;
+    border-radius: 20px;
+
+    &:hover{
+        animation: onProjectHover 1s;
+        animation-fill-mode: forwards; 
+        
+        
+    }
 }
+a{
+    text-decoration: none;
+}
+@keyframes onProjectHover {
+    0%{
+        background-color: transparent;
+    }
+    50%{
+
+    }
+    100%{
+        background-color: $headerColor;
+    }
+}
+
 .projectCard{
     display: flex;
     align-items: center;
     img{
-        width: 100px;
+        width: 200px;
     }
     .paragraph{
         margin-left: 2rem;
     }
+}
+.yellow{
+    color:yellow;
+}
+
+.icon{
+    font-size: 2rem;
+    margin: auto;
+    text-align: center;
+    text-align: left;
+    color:white;
+}
+.alignVertical{
+    display: flex;
+    align-items: center;
+}
+.iconHref{
+    margin-left: 5px;    
+}
+@media screen and (max-width:1004px) {
+    .cardContainer{
+        flex-direction: column;
+
+    }    
+    .card{
+        margin-top: 2rem;
+        
+    }
+}
+
+@media screen and (max-width:884px) {
+    .aboutMeContainer{
+        flex-direction: column;
+    }
+    .myAbout{
+        width: 80%;
+        text-align: center;
+    }
+    .myPicture{
+        width: 50%;
+        text-align: center;
+    }
+    .projectCard{
+        flex-direction: column;
+        text-align: center;
+
+        background-color: $headerColor;
+        background-color: rgba(112, 0125, 152, 0.3);
+        border-radius: 10px;
+    }
+    .contact{
+        text-align: center;
+    }
+    .cardImageContainer{
+        text-align: center;
+    }
+    .cardTextContainer{
+        text-align: center;
+    }
+
+}
+@media screen and (max-width:400px) {
+    .aboutMeContainer{
+        flex-direction: column;
+    }
+    .myAbout{
+        width: 80%;
+        text-align: center;
+    }
+    .myPicture{
+        width: 100%;
+        text-align: center;
+    }
+    $headerSize:0.8rem;
+
 }
