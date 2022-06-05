@@ -316,9 +316,12 @@ main {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .containre {
+    width: 50%;
+  }
   .card {
     padding: 10px;
-    width: 50%;
+    width: 100%;
     padding: 20px;
     margin-top: 2rem;
   }
