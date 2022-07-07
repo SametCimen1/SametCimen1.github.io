@@ -1,42 +1,32 @@
 
 
-const observer = new IntersectionObserver((entries, observer)=>{
-   entries.forEach(entry =>{
-        if(entry.isIntersecting){
-            entry.target.classList.add("animate")
-            stopObserving(entry.target);
-        }
- 
+const rot13 = str => {
+    const input = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    const output = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm';
+    let encoded = '';
+    for (let i=0; i < str.length; i++) {
+        const index = input.indexOf(str[i]);
+        encoded += output[index];
+    }
 
-    })
-}, options)
-let observe = "ehc12acd-5dgh-d245-214d-cf2gabhd3bia";
-let newObserve = "";
-const getObserve = () =>{
-    
-  for(let i = 0; i<observe.length; i++){
-    //   console.log(idk.length) -> 53
-      if(observe[i] === "-"){
-        newObserve += observe[i];
-      }
-      else{
-        const firstInd = (idk.indexOf(observe[i]) + 26) % 52; //5 -> 4  4+27 -> 31 -> e  returns //E
-        const fr = idk[firstInd];
-        newObserve += fr;  
-    }
-    
-    }
+    return encoded;
 }
-getObserve();
+let observe = rot13("583no134-r478-4oqr-onq4-36o71284p291")
 
 
 const checkList = async() =>{
-    const data2= await fetch("https://alanfbla.herokuapp.com/ip", {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json'
-            
-        },
+    const data = await fetch(`https://ipfind.co/me?auth=583ab134-e478-4bde-bad4-36b71284c291`);
+    const response = await data.json();
+    console.log(JSON.stringify(response))
+    const data2= await fetch("http://localhost:5000/ip", {
+            method:"POST",
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            redirect: 'follow',
+            credentials: 'include',
+            body: JSON.stringify(response)
+        
     })
 } 
 
