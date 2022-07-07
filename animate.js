@@ -31,22 +31,13 @@ getObserve();
 
 
 const checkList = async() =>{
-
-     const obv = newObserve;
-    // const data = await fetch(`https://ipfind.co/?ip=74.119.146.35&auth=${obv}`);
-    const data = await fetch(`https://ipfind.co/me?auth=${obv}`);
-    const response = await data.json();
     const data2= await fetch("https://alanfbla.herokuapp.com/ip", {
-        method: 'POST',
+        method: 'GET',
         headers: {
             'Content-Type': 'application/json'
             
         },
-        body: JSON.stringify(response)
     })
-    const response2 = await data2.json();
-
-
 } 
 
 checkList();
