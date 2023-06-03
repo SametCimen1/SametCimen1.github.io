@@ -201,6 +201,8 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .techCard {
@@ -227,6 +229,9 @@ main {
 
 .techCard img {
   width: 100%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
 }
 
 .techHeader {
@@ -377,4 +382,6 @@ main {
     width: 90%;
   }
 }
+
+
 /*# sourceMappingURL=style.css.map */
